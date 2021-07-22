@@ -13,13 +13,82 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  background-color: #f2f2f2;
+  display: flex;
+  position: relative;
   /* parameters for the header section */
+}
+
+.logo {
+  width: 154px;
+  height: 31px;
+  z-index: 1;
+  top: 30px;
+  left: 64px;
+  display: flex;
+}
+
+.logo_place_header {
+  position: absolute;
+}
+
+.header__title {
+  width: 730px;
+  display: flex;
+  margin: auto;
+  margin-left: 64px;
+}
+
+.header__title_style {
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+}
+
+.header__subtitle {
+  position: absolute;
+  display: block;
+  width: 388px;
+  bottom: 30px;
+  left: 64px;
+  z-index: 3;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.header__subtitle_margin {
+  margin: 0;
+}
+
+.header__link_style {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.header__link_style:visited {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__main-illustration {
+  width: 756px;
+  height: 608px;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  display: flex;
 }
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
 }
 
 /* including elements with key-value modifiers */
