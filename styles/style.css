@@ -157,6 +157,7 @@
   width: 60%;
   margin: auto;
   text-align: center;
+  z-index: 3;
 }
 
 .section-subtitle__style {
@@ -164,6 +165,7 @@
   font-size: 24px;
   font-weight: normal;
   margin: 0;
+  z-index: 3;
 }
 
 .table {
@@ -180,6 +182,7 @@
 .table__cell {
   width: 250px;
   margin-top: 60px;
+  z-index: 3;
 }
 
 .table__heading {
@@ -272,10 +275,59 @@
   z-index: 1;
 }
 
+.kaufman {
+  position: relative;
+  background-color: #000;
+  overflow: hidden;
+  z-index: 0;
+}
+
 /* including elements with key-value modifiers */
+
+.section-title_theme_dark {
+  color: white;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+
+.section-subtitle_theme_dark {
+  color: white;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  border: 1px solid red;
+  margin-bottom: 0;
+}
+
+.table_theme_dark {
+  margin-bottom: 90px;
+}
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  border: 1px solid red;
+
+}
+
+.table__heading_theme_dark {
+
+}
+
+.table__text_theme_dark {
+
+}
+
+.kaufman-triangle {
+  position: absolute;
+  width: 660px;
+  height: 636px;
+  top: 0;
+  right: -124px;
+  z-index: 2;
 }
