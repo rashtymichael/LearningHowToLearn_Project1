@@ -92,9 +92,11 @@
 }
 
 .content {
+  border: 1px solid red;
 }
 
 .description {
+  border: 1px solid red;
 }
 
 .two-columns {
@@ -201,6 +203,73 @@
   font-weight: normal;
   margin-top: 20px;
   margin-bottom: 0;
+}
+
+.feynman {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #f2f2f2;
+  height: 790px;
+  z-index: 3;
+}
+
+.feynman__title {
+  margin: 100px auto 0;
+  text-align: center;
+  z-index: 2;
+}
+
+.feynman__title_style {
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 70px;
+  width: 775px;
+}
+
+.feynman__subtitle {
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
+}
+
+.feynman__subtitle_style {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.feynman__link {
+  text-decoration: none;
+  color: #2f80ed;
+  position: absolute;
+  right: 48px;
+  top: 50%;
+}
+
+.feynman__link_style {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.feynman__link:visited {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.feynman__image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 867px;
+  height: 637px;
+  z-index: 1;
 }
 
 /* including elements with key-value modifiers */
