@@ -16,7 +16,6 @@
   background-color: #f2f2f2;
   display: flex;
   position: relative;
-  /* parameters for the header section */
 }
 
 .logo {
@@ -61,7 +60,7 @@
   margin: 0;
 }
 
-.header__link_style {
+.header__link {
   text-decoration: none;
   color: #2f80ed;
 }
@@ -89,12 +88,6 @@
   position: absolute;
   top: 64px;
   right: 0;
-}
-
-.content {
-}
-
-.description {
 }
 
 .two-columns {
@@ -142,7 +135,7 @@
   text-align: center;
 }
 
-.section-title__style {
+.section-title_style {
   line-height: 69px;
   font-size: 60px;
   font-weight: bold;
@@ -158,7 +151,7 @@
   z-index: 3;
 }
 
-.section-subtitle__style {
+.section-subtitle_style {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -183,7 +176,7 @@
   z-index: 3;
 }
 
-.table__heading {
+.table__heading, .table__heading_theme_dark {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
@@ -191,7 +184,7 @@
   margin-bottom: 20px;
 }
 
-.table__text {
+.table__text, .table__text_theme_dark {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -280,8 +273,6 @@
   z-index: 0;
 }
 
-/* including elements with key-value modifiers */
-
 .section-title_theme_dark {
   color: white;
   line-height: 69px;
@@ -289,6 +280,7 @@
   font-weight: bold;
   margin-top: 90px;
   margin-bottom: 20px;
+  z-index: 3;
 }
 
 .section-subtitle_theme_dark {
@@ -308,14 +300,7 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
-}
-
-.table__heading_theme_dark {
-
-}
-
-.table__text_theme_dark {
-
+  z-index: 3;
 }
 
 .kaufman-triangle {
@@ -324,7 +309,7 @@
   height: 636px;
   top: 0;
   right: -124px;
-  z-index: 2;
+  z-index: 0;
 }
 
 .footer {
@@ -345,7 +330,7 @@
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
-  position: relative;
+  /* position: relative; */
 }
 
 .footer__column_content_about {
@@ -372,10 +357,8 @@
   font-size: 18px;
   font-weight: normal;
   color: white;
-  margin-top: 18px;
+  margin-top: auto;
   margin-bottom: 18px;
-  position: absolute;
-  bottom: 0;
 }
 
 .footer__column-heading {
