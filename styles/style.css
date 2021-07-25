@@ -22,26 +22,25 @@
   width: 154px;
   height: 31px;
   z-index: 1;
-  top: 30px;
-  left: 64px;
   display: flex;
 }
 
 .logo_place_header {
   position: absolute;
+  top: 30px;
+  left: 64px;
 }
 
 .header__title {
-  width: 730px;
+  max-width: 730px;
   display: flex;
+  margin: 0;
   margin: auto;
   margin-left: 64px;
-}
-
-.header__title_style {
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
+  z-index: 1;
 }
 
 .header__subtitle {
@@ -54,9 +53,6 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-}
-
-.header__subtitle_margin {
   margin: 0;
 }
 
@@ -80,7 +76,6 @@
   display: flex;
 }
 
-/* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
   height: 568px;
   width: 568px;
@@ -94,8 +89,8 @@
   display: flex;
   justify-content: space-between;
   width: 80%;
-  min-width: 784px;
-  margin: 100px auto;
+  margin: 0 auto;
+  padding-top: 100px;
 }
 
 .two-columns__brief {
@@ -103,15 +98,14 @@
   font-size: 18px;
   font-weight: normal;
   width: 175px;
-  display: flex;
   color: #2f80ed;
   margin: 0;
 }
 
 .two-columns__main-text {
-  display: flex;
   flex-flow: column wrap;
   width: 80%;
+  min-width: 784px;
 }
 
 .two-columns__paragraph {
@@ -125,37 +119,31 @@
   margin: 0;
 }
 
-.two-columns__paragraph_span-accent {
+.two-columns__span-accent {
   font-weight: bold;
+}
+
+.digits {
+  padding-top: 100px;
 }
 
 .section-title {
   width: 60%;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
-}
-
-.section-title_style {
   line-height: 69px;
   font-size: 60px;
   font-weight: bold;
-  margin: 0;
-  margin-top: 100px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .section-subtitle {
   width: 60%;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
-  z-index: 3;
-}
-
-.section-subtitle_style {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin: 0;
   z-index: 3;
 }
 
@@ -163,11 +151,11 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
+  margin: 0 auto;
   width: 1100px;
   justify-content: space-between;
   padding: 0;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .table__cell {
@@ -176,27 +164,19 @@
   z-index: 3;
 }
 
-.table__heading, .table__heading_theme_dark {
+.table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
   margin: 0;
-  margin-bottom: 20px;
 }
 
-.table__text, .table__text_theme_dark {
+.table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   margin: 0;
-}
-
-.table__text_source {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
   margin-top: 20px;
-  margin-bottom: 0;
 }
 
 .feynman {
@@ -204,22 +184,19 @@
   flex-direction: column;
   position: relative;
   background-color: #f2f2f2;
-  height: 790px;
+  min-height: 790px;
   z-index: 3;
 }
 
 .feynman__title {
-  margin: 100px auto 0;
   text-align: center;
-  z-index: 2;
-}
-
-.feynman__title_style {
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
-  margin: 0;
-  margin-bottom: 70px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  z-index: 2;
   width: 775px;
 }
 
@@ -227,13 +204,9 @@
   margin: 0 auto;
   text-align: center;
   z-index: 2;
-}
-
-.feynman__subtitle_style {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  margin: 0;
 }
 
 .feynman__link {
@@ -242,14 +215,9 @@
   position: absolute;
   right: 48px;
   top: 50%;
-}
-
-.feynman__link_style {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  color: #2f80ed;
-  text-decoration: none;
 }
 
 .feynman__link:visited {
@@ -268,9 +236,12 @@
 
 .kaufman {
   position: relative;
-  background-color: #000;
+  background-color: #1f1f1f;
   overflow: hidden;
   z-index: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 90px 0;
 }
 
 .section-title_theme_dark {
@@ -278,9 +249,7 @@
   line-height: 69px;
   font-size: 60px;
   font-weight: bold;
-  margin-top: 90px;
-  margin-bottom: 20px;
-  z-index: 3;
+  z-index: 1;
 }
 
 .section-subtitle_theme_dark {
@@ -292,7 +261,7 @@
 }
 
 .table_theme_dark {
-  margin-bottom: 90px;
+  padding-bottom: 90px;
 }
 
 .table__cell_theme_dark {
@@ -300,10 +269,9 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
-  z-index: 3;
 }
 
-.kaufman-triangle {
+.kaufman__triangle {
   position: absolute;
   width: 660px;
   height: 636px;
@@ -314,41 +282,33 @@
 
 .footer {
   min-height: 350px;
-  background-color: #000;
-  z-index: -1;
+  background-color: #1f1f1f;
+  z-index: 1;
   display: flex;
 }
 
 .footer__columns {
   display: flex;
   width: 90%;
-  margin: 60px auto 40px;
+  margin: 0 auto;
+  padding: 60px 0 40px;
   justify-content: space-between;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__column_content_copyright {
   flex-basis: 711px;
-  display: flex;
-  flex-direction: column;
-  /* position: relative; */
-}
-
-.footer__column_content_about {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__column_content_social {
-  display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }
 
 .logo_place_footer {
   width: 183px;
   height: 35px;
-  z-index: 1;
-  top: 0;
-  left: 0;
+  z-index: 2;
   display: flex;
 }
 
@@ -367,6 +327,7 @@
   font-weight: bold;
   color: white;
   margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .footer__list {
@@ -384,7 +345,6 @@
   font-weight: normal;
   color: white;
   display: flex;
-  margin-bottom: 10px;
 }
 
 .footer__column-link:visited {
