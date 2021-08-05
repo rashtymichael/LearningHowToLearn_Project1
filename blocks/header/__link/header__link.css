@@ -1,0 +1,14 @@
+.header__link {
+    text-decoration: none;
+    color: #2f80ed;
+    opacity: 1.0;
+  }
+  
+  .header__link:hover {
+    opacity: 0.5;
+  }
+  
+  .header__link_style:visited {
+    color: #2f80ed;
+    text-decoration: none;
+  }

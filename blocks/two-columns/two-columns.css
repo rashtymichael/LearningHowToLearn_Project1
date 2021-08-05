@@ -1,0 +1,13 @@
+@import url(../blocks/two-columns/__brief/two-columns__brief.css); 
+@import url(../blocks/two-columns/__main-text/two-columns__main-text.css); 
+@import url(../blocks/two-columns/__paragraph/two-columns__paragraph.css); 
+@import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css); 
+@import url(../blocks/two-columns/_oakley/two-columns_oakley.css); 
+
+.two-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
