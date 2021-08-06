@@ -6,13 +6,14 @@
     font-weight: normal;
     margin-left: 48px;
     opacity: 1.0;
+    align-self: flex-start;
   }
   
   .khan__buy-link:hover {
     opacity: 0.5;
+    transition: 1s linear;
   }
   
   .khan__buy-link:visited {
     text-decoration: none;
-    color: #2f80ed;
   }

@@ -12,6 +12,7 @@
   
   .feynman__link:hover {
     opacity: 0.5;
+    transition: 1s linear;
   }
   
   .feynman__link:visited {
